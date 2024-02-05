@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="shortcut icon" href="#">  <!-- remove favicon not found error -->
+       <script src="bundle.js" defer></script>
+
+</head>
+<body>
+
+<header class="topHeader">
+<nav class="navBar">
+    <div class="nav-Brand"><p>Your <br>weather</p></div>
+    <!-- <ul class="nav-Menu">
+        <li class="nav-Item">
+        <a href="#" class="nav-Link">Options</a>
+        </li>
+    </ul>
+
+    <div class="navBurger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div> -->
+</nav>
+</header>
+
+<div id="content">
+
+<div class="spacer"></div>
+<div class="searchBar">
+<form action="./" id="searchForm">      <!-- this form may influence searc hbar styling, checkout  --> 
+    <label for="search"></label>
+    <input type="text" id="searchInput" name="search" aria-label="search for a place">
+
+<div id="searchicon"><span class="material-icons md-20">search</span>
+<input type="submit" class="searchSubmit" value=""></input>
+</div>
+</form>
+
+</div>
+
+<div id="mainContainer">
+    <h1 id="locationH1"></h1>
+    <div id="tiles">
+        <!-- <div class="tile active">
+            <div class="weatherIMG">
+            <img src="#" class="weatherBgImg" alt="weather image">
+            </div>
+            <div class="tileTitle"><p>MON</p></div>
+            <div class="tileInfo">
+                <div class="maxTemp">
+                    <p>Max temp: 29°C</p>
+                </div>
+                <div class="minTemp">
+                    <p>Min temp: 9°C</p>
+                </div>
+                <div class="rainPercent">
+                    <p>Rain: 18%</p>
+                </div>
+            </div>
+        </div>
+        <div class="tile active">
+            <div class="weatherIMG">
+                <img src="#" class="weatherBgImg" alt="weather image">
+                <br><br><br><br><p>SUNNYs</p>
+            </div>
+            <div class="tileTitle">
+                <p>TUE</p>
+            </div>
+            <div class="tileInfo">
+                <div class="maxTemp">
+                    <p>Max temp: 27°C</p>
+                </div>
+                <div class="minTemp">
+                    <p>Min temp: 8°C</p>
+                </div>
+                <div class="rainPercent">
+                    <p>Rain: 08%</p>
+                </div>
+            </div>
+        </div>
+        <div class="tile inactive">
+            <div class="tileMsg">
+                <p>No Data</p>
+            </div>
+            <div class="tileInfo">
+                <p>only available <br>in the paid tier</p>
+            </div>
+        </div>
+         -->
+    </div>
+</div>
+
+<div class="info">
+    <div class="infoSpacer"></div>
+    <div class="infoHeader"><!-- <p>Additional information</p> -->
+    </div>
+    
+    <div id="infoContainer">  
+
+        <div id="date">
+          <h3 class="dateH3"></h3>
+        </div>
+        <!-- <div class="dayInfos"> <div> -->
+        <h2 class="detailHeading">Detailed weather:</h3><br>
+        
+        <div id="smallTileContainer">
+          <!-- 
+          <div class="smallTile"><div class="detailTime">9 am</div><div class="detailCondition">sunny</div><div class="detailDegrees">9°</div></div>
+          <div class="smallTile"><div class="detailTime">10 am</div><div class="detailCondition">sunny</div><div class="detailDegrees">9°</div></div>
+          <div class="smallTile"><div class="detailTime">11 am</div><div class="detailCondition">cloudy</div><div class="detailDegrees">10°</div></div>
+          <div class="smallTile"><div class="detailTime">12 am</div><div class="detailCondition">windy</div><div class="detailDegrees">10°</div></div>
+          -->
+        </div>
+
+        <div id="detailText"> 
+          <!-- dynamically create p elements with content, style with detailText grid -->
+          <!-- Or pre-set the divs -->
+          <div class="windSpeed">Wind speed: </div>
+          <div class="rainAmount">Rain (mm): </div>
+           <!--                                     -->
+        </div>
+
+    </div>
+</div>
+
+<button type="button" id="CFbutton">°C/F</button>
+<button type="button" id="milesKilometresButton">km/h - miles/h</button>
+<button type="button" id="detailButton">Detail mode</button>
+
+
+
+
+
+</body>
+</html>
